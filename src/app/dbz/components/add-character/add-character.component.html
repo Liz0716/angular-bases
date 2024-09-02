@@ -1,0 +1,16 @@
+<h4>Agregar Personaje</h4>
+    <!-- () es para escuchar eventos -->
+    <form class="row" (ngSubmit)="emitCharacter()">
+      <!-- El ngModel es asociar un evento y un atributo -->
+      <input type="text" [(ngModel)]="Character.name" name="name" class="form-control mb-2" placeholder="Nombre">
+
+      <input type="number" [(ngModel)]="Character.power" name="power" class="form-control mb-2" placeholder="Poder">
+
+      <button type="submit" class="btn btn-primary">
+        Agregar Personaje
+      </button>
+
+      <!-- Es un pipe  -->
+      <!-- <pre>{{Character | json}}</pre> -->
+
+    </form>

@@ -1,0 +1,19 @@
+<h3>BDZ Personajes</h3>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <!-- Ya esta en dbzSerice -->
+    <dbz-list  [characterList]="characters" (onDelete)="onDeleteCharacter($event)"></dbz-list>
+  </div>
+
+  <div class="col">
+
+    <!-- {{characters}} -->
+    <!-- Escuchar el evento $event para recibirlo-->
+    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+  </div>
+
+</div>
+
+
